@@ -6,14 +6,14 @@ const textoResultado=document.querySelector(".texto-resultado");
 
 const perguntas = [
 {
-    enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as duvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual é o primeiro pensamento",
+    enunciado: "voce gosta de praticar eportes?",
     alternativas:[
         {
-        texto:"isso é assustador",
+        texto:"sim",
         afirmacao:"afirmação"
         },
         {
-       texto:"isso é maravilhoso",
+       texto:"não",
        afirmacao:"afirmação"
         }
 
@@ -22,13 +22,13 @@ const perguntas = [
 
 {
     
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma",
+        enunciado: "Com que frequecia?",
         alternativas:[{
-            texto:"Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+            texto:"frequentemente",
             afirmacao:"afirmação"
         },
         {        
-           texto:"Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+           texto:"raramente",
            afirmacao:"afirmação"
         }        
         ]
@@ -37,14 +37,14 @@ const perguntas = [
 
     {
     
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "quantas vzes por semana?",
         alternativas:[
             {
-            texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+            texto:"todos o dias",
             afirmacao:"afrimação"
             },
             {
-            texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendo a importância de proteger os trabalhadores.",
+            texto:"uma vez ou mais por semana",
             afirmacao:"afirmação"
             }
         ]
@@ -52,14 +52,14 @@ const perguntas = [
     
     {
     
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "você se sente saudavel exercitando seu corpo?",
         alternativas:[
             {
-            texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
+            texto:"sim",
             afirmacao:"afirmação"
         },
         {
-            texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
+            texto:"não",
             afirmacao:"afirmação"
         }
         ]
@@ -67,14 +67,14 @@ const perguntas = [
 
     {
     
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Qual dos benefícios a seguir você considera mais relevante quando se pratica esportes para a saúde??",
         alternativas:[
             {
-            texto:"Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+            texto:"Melhora da saúde cardiovascular e aumento da resistência física",
             afirmacao:"afirmação"
             },
         {
-            texto:"O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+            texto:"aumento do estresse e diminuição da flexibilidade",
             afirmacao:"afirmação"
         }
         ]
@@ -83,7 +83,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = "joãozinho gosta de praticar esportes, frequentemente por semana, todos os dias, ele c sente saudavel exercitando seu corpo, isso melhora sua saúde cardiovascular e aumenta a resistencia fisica";
 
 function mostraPergunta(){
     if (atual >= perguntas.length){
